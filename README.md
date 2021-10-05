@@ -8,3 +8,5 @@
 https://pypi.org/project/mmh3/  
 https://pypi.org/project/bitarray/  
 
+# 依赖
+python3-devel
