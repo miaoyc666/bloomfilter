@@ -1,4 +1,4 @@
-# BloomFilter， 
+# BloomFilter
 
 # 实现思路
 - 使用bitarray存储位数据
