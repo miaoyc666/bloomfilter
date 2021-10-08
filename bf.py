@@ -40,12 +40,11 @@ class BloomFilter:
 
     def contains(self, url):
         # Check if a url is in a collection
-        point_list = self.get_postion(url)
-        return all(point_list)
+        point_list = self.get_position(url)
+        return all(self.bits[i] for i in point_list)
 
     def add(self, url):
         # Add a url, and set points in bitarray to 1 (Points count is equal to hash funcs count.)
         point_list = self.get_position(url)
-
         for b in point_list:
-            self.bit_array[b] = 1
+            self.bits[b] = 1
